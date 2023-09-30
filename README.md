@@ -52,9 +52,18 @@ Explains Dockerfile commands:
 ![image](https://github.com/Sumaya-Ali/Docker-Commands/assets/52631071/df217047-be0b-4a91-9994-f8945f61a012)
 
 FROM => parents docker image (operating system & environment [Node/Ruby/Python/......] / could be installed locally or downloaded from DockerHub
-COPY ==> to coppy all projects files to some directory in order to packaging them & decorized them
-WORKDIR ==> to change the work directory to the new created folder in order to run the following commands on projects files
-CMD ==> to execute the command that responsibe for creating instans and start containers (could be running multible times)
+COPY ==> to copy all project files to some directory in order to package them & dockerized them
+WORKDIR ==> to change the working directory to the newly created folder in order to run the following commands on project files
+CMD ==> to execute the command that is responsible for creating instances and starting containers (could be running multiple times)
+
+============================================
+![image](https://github.com/Sumaya-Ali/Docker-Commands/assets/52631071/26976916-3b9d-4fb4-ab89-ae0e86e149f6)
+
+RUN ==> to execute commands just one time (during building docker image ) In this case we want to collect the project dependencies (node modules/packages..)
+EXPOSE ==> to declare the internal docker image port (in case of web application) [according to the defined port in projects code] .. this instruction is not
+necessary but heighly recommended
+
+
 
 
 
