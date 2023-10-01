@@ -51,23 +51,23 @@ Explains Dockerfile commands:
 
 ![image](https://github.com/Sumaya-Ali/Docker-Commands/assets/52631071/df217047-be0b-4a91-9994-f8945f61a012)
 
-FROM => parents docker image (operating system & environment [Node/Ruby/Python/......] / could be installed locally or downloaded from DockerHub
-COPY ==> to copy all project files to some directory in order to package them & dockerized them
-WORKDIR ==> to change the working directory to the newly created folder in order to run the following commands on project files
-CMD ==> to execute the command that is responsible for creating instances and starting containers (could be running multiple times)
+### FROM => parents docker image (operating system & environment [Node/Ruby/Python/......] / could be installed locally or downloaded from DockerHub
+###  COPY ==> to copy all project files to some directory in order to package them & dockerized them
+### WORKDIR ==> to change the working directory to the newly created folder in order to run the following commands on project files
+### CMD ==> to execute the command that is responsible for creating instances and starting containers (could be running multiple times)
 
 ============================================
 
 ![image](https://github.com/Sumaya-Ali/Docker-Commands/assets/52631071/321582a4-0244-4900-a313-1d989075fe4e)
 
-RUN ==> to execute commands just one time (while building the docker image ) In this case we want to collect the project dependencies (node modules/packages..)
-EXPOSE ==> to declare the internal docker image port (in case of a web application) [according to the defined port in the project code] .. this instruction is not
+### RUN ==> to execute commands just one time (while building the docker image ) In this case we want to collect the project dependencies (node modules/packages..)
+### EXPOSE ==> to declare the internal docker image port (in case of a web application) [according to the defined port in the project code] .. this instruction is not
 necessary but highly recommended
 
 ============================================
 ![image](https://github.com/Sumaya-Ali/Docker-Commands/assets/52631071/9d7c9dc8-a375-4b23-a4b2-29a92788ef85)
 
-we create .dockerignore file to ignore some files or extensions from dockeriz ex: node-modules / logs / .. etc
+### .dockerignore file to ignore some files or extensions from dockeriz ex: node-modules / logs / .. etc
 
 
 
