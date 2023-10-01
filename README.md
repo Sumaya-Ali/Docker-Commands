@@ -68,6 +68,11 @@ Explains Dockerfile commands:
 
 ### .dockerignore file to ignore some files or extensions from dockeriz ex: node-modules / logs / .. etc
 
+============================================
+### Layer caching 
+to avoid rebuilding unnecessary docker image layers when we change something in the project code because docker will rebuild COPY instruction and all the layers below it. we change the order of layers and put [RUN npm install] above COPY in order to cache it so there is no need to rebuild this layer
+the modified layer and all layers below it will be rebuilt -  Docker gets the above layers from cach. 
+![image](https://github.com/Sumaya-Ali/Docker-Commands/assets/52631071/7af9734c-43bb-4502-86e6-23776d9231a3)
 
 
 
