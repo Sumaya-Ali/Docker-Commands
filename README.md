@@ -48,6 +48,8 @@ docker run --name [container name] -p [host port: docker image internal port] -d
 docker container rm  [container name or container id] [container name or container id] [container name or container id] ...
 we can remove multiple containers
 ============================================
+### 13 to remove all images, containers & volumes
+docker system prune -a
 ============================================
 ============================================
 Explains Dockerfile commands:
