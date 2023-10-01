@@ -39,10 +39,11 @@ docker stop [container id or container name]
 docker start [container name or container id]
 ============================================
 ### 11 to create a container from an image
-docker run --name [container name] -p [host port: docker image internal port] -d [docker image name or docker image id]
+docker run --name [container name] -p [host port: docker image internal port] -d [docker image name or docker image id]:[tag name]
 -- name ==> the name of the container
 -p ==> to define port if it was a web application
 -d ==> undetached to avoid locking the console after running the container but that bot necessarily
+[tag name] ==> image tag (version)- not necessary by default ==> latest
 ============================================
 ### 12 to remove container
 docker container rm  [container name or container id] [container name or container id] [container name or container id] ...
