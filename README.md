@@ -45,8 +45,8 @@ docker run --name [container name] -p [host port: docker image internal port] -d
 -d ==> undetached to avoid locking the console after running the container but that bot necessarily
 ============================================
 ### 12 to remove container
-docker container rm  [container name or container id]
-
+docker container rm  [container name or container id] [container name or container id] [container name or container id] ...
+we can remove multiple containers
 ============================================
 ============================================
 ============================================
