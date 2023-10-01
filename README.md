@@ -58,11 +58,17 @@ CMD ==> to execute the command that is responsible for creating instances and st
 
 ============================================
 
-![image](https://github.com/Sumaya-Ali/Docker-Commands/assets/52631071/26976916-3b9d-4fb4-ab89-ae0e86e149f6)
+![image](https://github.com/Sumaya-Ali/Docker-Commands/assets/52631071/321582a4-0244-4900-a313-1d989075fe4e)
 
 RUN ==> to execute commands just one time (while building the docker image ) In this case we want to collect the project dependencies (node modules/packages..)
-EXPOSE ==> to declare the internal docker image port (in case of web application) [according to the defined port in project code] .. this instruction is not
+EXPOSE ==> to declare the internal docker image port (in case of a web application) [according to the defined port in the project code] .. this instruction is not
 necessary but highly recommended
+
+============================================
+![image](https://github.com/Sumaya-Ali/Docker-Commands/assets/52631071/3a411e28-b51c-45ee-8ad4-ddf07a021f6c)
+we create .dockerignore file to ignore some files or extensions from dockeriz ex: node-modules / logs / .. etc
+
+
 
 
 
