@@ -39,16 +39,28 @@ docker stop [container id or container name]
 docker start [container name or container id]  
 ============================================  
 ### 11 to create a container from an image  
-docker run --name [container name] -p [host port: docker image internal port] -d --rm -v [absulot path code folder:docker file folder ] -v [some docker folder path to ignore from mapping - anonymous volume] [docker image name or docker image id]:[tag name]  
+
+docker run --name [container name] -p [host port: docker image internal port] -d --rm -v [absulot path code folder:docker file 
+folder ] -v [some docker folder path to ignore from mapping - anonymous volume] [docker image name or docker image id]:[tag name]  
+
 -- name ==> the name of the container  
+
 -p ==> to define port if it was a web application  
+
 -d ==> undetached to avoid locking the console after running the container but that bot necessarily  
+
 --rm ==> optional to remove the container after stopping it  
+
 -v ==> optional to create volume (connect code folder with docker image folder so the changes reflect immediately after restarting the container - but we still have to build the image if we want to share it -  this solution mint just for development purposes)  
+
 ex: C:\Users\Toshiba\hello-docker\api:/app  
+
 -v(2)[anonymous volume] ==> to ignore some docker folder from original volume. ex: ignore node-modules folder because it can be deleted from the code project and that will cause it to be deleted in the container and the container will no longer work. because of that we create an anonymous volume and map that folder with somewhere else anonymous.  
+
 ex: -v /app/node-modules      
+
 [tag name] ==> image tag (version)- not necessary by default ==> latest  
+
 ============================================  
 ### 12 to remove container  
 docker container rm  [container name or container id] [container name or container id] [container name or container id] ...  
