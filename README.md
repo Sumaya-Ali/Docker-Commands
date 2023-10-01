@@ -65,7 +65,8 @@ EXPOSE ==> to declare the internal docker image port (in case of a web applicati
 necessary but highly recommended
 
 ============================================
-![image](https://github.com/Sumaya-Ali/Docker-Commands/assets/52631071/3a411e28-b51c-45ee-8ad4-ddf07a021f6c)
+![image](https://github.com/Sumaya-Ali/Docker-Commands/assets/52631071/9d7c9dc8-a375-4b23-a4b2-29a92788ef85)
+
 we create .dockerignore file to ignore some files or extensions from dockeriz ex: node-modules / logs / .. etc
 
 
