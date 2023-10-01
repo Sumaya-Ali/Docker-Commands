@@ -61,8 +61,7 @@ Explains Dockerfile commands:
 ![image](https://github.com/Sumaya-Ali/Docker-Commands/assets/52631071/321582a4-0244-4900-a313-1d989075fe4e)
 
 ### RUN ==> to execute commands just one time (while building the docker image ) In this case we want to collect the project dependencies (node modules/packages..)
-### EXPOSE ==> to declare the internal docker image port (in case of a web application) [according to the defined port in the project code] .. this instruction is not
-necessary but highly recommended
+### EXPOSE ==> to declare the internal docker image port (in case of a web application) [according to the defined port in the project code] .. this instruction is not necessary but highly recommended
 
 ============================================
 ![image](https://github.com/Sumaya-Ali/Docker-Commands/assets/52631071/9d7c9dc8-a375-4b23-a4b2-29a92788ef85)
