@@ -1,15 +1,15 @@
-# Docker-Commands
-Repository to explain docker cmd commands
-============================================
-### 1  to display the docker version in detail or shortly 
-docker -version
-or
-docker -v
-============================================
-### 2 to display all docker images
-docker images
-or
-docker image ls
+# Docker-Commands  
+Repository to explain docker cmd commands  
+============================================  
+### 1  to display the docker version in detail or shortly   
+docker -version  
+or  
+docker -v  
+============================================  
+### 2 to display all docker images  
+docker images  
+or  
+docker image ls  
 ============================================
 ### 3 to display all running containers
 docker ps
