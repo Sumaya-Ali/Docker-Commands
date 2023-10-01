@@ -10,21 +10,21 @@ docker -v
 docker images  
 or  
 docker image ls  
-============================================
-### 3 to display all running containers
-docker ps
-============================================
-### 4 to display all containers
-docker ps -a
-============================================
-### 5 to get docker image from DockerHub
-docker pull [docker image name]
-============================================
-### 6 to build docker image from local project (after adding Dockerfile inside it)
-docker build -t [docker image name]: [tag name] [docker image path]
--t ==> shortcut for tag (version) by default is (latest) or you can give tag name
-change the directory to be inside your project folder so [docker image path] can be just dot .
-============================================
+============================================  
+### 3 to display all running containers  
+docker ps  
+============================================  
+### 4 to display all containers  
+docker ps -a  
+============================================  
+### 5 to get docker image from DockerHub  
+docker pull [docker image name]  
+============================================  
+### 6 to build docker image from local project (after adding Dockerfile inside it)  
+docker build -t [docker image name]: [tag name] [docker image path]  
+-t ==> shortcut for tag (version) by default is (latest) or you can give tag name  
+change the directory to be inside your project folder so [docker image path] can be just dot .  
+============================================  
 ### 7 to remove image
 docker image rm -f [docker image name or docker image id]
 -f ==> shortcut for force - to force removing in case there are related containers to this image but that is normally not necessarily
