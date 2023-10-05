@@ -10,11 +10,12 @@
 
 ![image](https://github.com/Sumaya-Ali/Docker-Commands/assets/52631071/d19f74da-710a-4e3e-ae84-70a426f84158)  
 
+============================================  
+to add docker to Visual Studio:  
 
+![image](https://github.com/Sumaya-Ali/Docker-Commands/assets/52631071/1309ad85-aa3c-481b-9f37-7afd8ec55573)  
 
-
-
-
+![image](https://github.com/Sumaya-Ali/Docker-Commands/assets/52631071/939ae456-74fa-4156-88a2-7d8186bae506)  
 
 ============================================  
 # Docker-Commands  
@@ -80,10 +81,12 @@ docker start [container name or container id]
 ============================================  
 ### 11 to create a container from an image  
 
-docker run --name [container name] -p [host port: docker image internal port] -d --rm -v [absulot path code folder:docker file 
+docker run --name [container name] -e [environment variable]=[value] -p [host port: docker image internal port] -d --rm -v [absulot path code folder:docker file 
 folder ] -v [some docker folder path to ignore from mapping - anonymous volume] [docker image name or docker image id]:[tag name]  
 
 -- name ==> the name of the container  
+
+-e ==> environment variable  ex: -e db_name = sumaya   (could be multiple environment variables)  
 
 -p ==> to define port if it was a web application  
 
