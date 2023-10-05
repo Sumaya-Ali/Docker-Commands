@@ -110,6 +110,21 @@ ex: docker tag hello-docker sumaya95ali/hello-docker:latest
 and only after that we can push image in dockerhub  
 
 ============================================  
+### 15 to run docker-compose (build images & run containers)  
+docker-compose up   
+============================================  
+### 16 to stop docker-compose (remove the containers but keep images)  
+docker-compose down  
+to remove all (including volumes)  
+docker-compose down --rmi all -v  
+============================================  
+### 17 to log in to docker  
+docker login  
+============================================  
+### 18 to show docker-compose version  
+docker-compose --version  
+============================================  
+
 ============================================  
 Explains Dockerfile commands:  
 ============================================  
