@@ -222,6 +222,16 @@ we want our container to communicate with DB container, that is why we define th
 
 ![image](https://github.com/Sumaya-Ali/Docker-Commands/assets/52631071/e47a9a0a-83b6-4964-ae7d-83d95fd680a2)  
 
+============================================  
+passing Environment Variables:  
+============================================  
+when we have DB, Logs, .. etc. we pass environment variables to the container (through docker-compose) which is used in code to define (the path of the log file, DB server, DB host, DB User ID/Password, ..etc.  
+
+![image](https://github.com/Sumaya-Ali/Docker-Commands/assets/52631071/aeabf866-7ec7-421c-b0ff-e8a04ccfcea5)  
+
+![image](https://github.com/Sumaya-Ali/Docker-Commands/assets/52631071/1c88729b-d16e-4e98-ba9e-ddc89832c082)  
+
+
 
 
 
