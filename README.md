@@ -31,6 +31,10 @@ docker -v
 docker images  
 or  
 docker image ls  
+
+to show just images Ids  
+docker image ls -q  
+
 ============================================  
 ### 3 to display all running containers  
 
@@ -57,6 +61,10 @@ change the directory to be inside your project folder so [docker image path] can
 docker image rm -f [docker image name or docker image id]  
 
 -f ==> shortcut for force - to force removing in case there are related containers to this image but that is normally not necessarily  
+
+to remove specific images Ids  
+docker image rm $(docker image ls -q)  
+
 ============================================  
 ### 8 to push docker image to DockerHub - after changing the directory to be inside the project folder (ensure to execute docker tag first - find it down below)  
 
