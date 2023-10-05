@@ -10,6 +10,12 @@
 
 ![image](https://github.com/Sumaya-Ali/Docker-Commands/assets/52631071/d19f74da-710a-4e3e-ae84-70a426f84158)  
 
+![image](https://github.com/Sumaya-Ali/Docker-Commands/assets/52631071/2f4e476f-625b-4fa2-bfad-4be9bb3081ce)  
+
+![image](https://github.com/Sumaya-Ali/Docker-Commands/assets/52631071/e4e68562-1857-4eaf-83bd-6147ce01fe76)  
+
+![image](https://github.com/Sumaya-Ali/Docker-Commands/assets/52631071/a6af4cdf-7757-4e91-ad79-f37449a27c7e)  
+
 ============================================  
 to add docker to Visual Studio:  
 
