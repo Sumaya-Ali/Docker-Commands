@@ -107,6 +107,10 @@ ex: -v /app/node-modules
 docker container rm  [container name or container id] [container name or container id] [container name or container id] ...  
 
 we can remove multiple containers  
+
+to remove specific containers Ids  
+docker container rm $(docker container ls -aq)  
+
 ============================================  
 ### 13 to remove all images, containers & volumes  
 
