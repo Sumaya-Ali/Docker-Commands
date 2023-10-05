@@ -201,6 +201,31 @@ to avoid rebuilding unnecessary docker image layers when we change something in 
 the modified layer and all layers below it will be rebuilt -  Docker gets the above layers from cach.    
 ![image](https://github.com/Sumaya-Ali/Docker-Commands/assets/52631071/7af9734c-43bb-4502-86e6-23776d9231a3)  
 
+============================================  
+Docker Compose:  
+============================================  
+we use a docker-compose file when we have multiple containers (or just one) because it is easier to build containers that the run commands, and it takes the similar attribuits  
+
+============================================  
+Multi Staging in Docker file:  
+============================================  
+
+![image](https://github.com/Sumaya-Ali/Docker-Commands/assets/52631071/664d0939-25a8-4ec5-9607-8f81d727b544)  
+
+in the case of dotNetCore projects, we use multi staging docker file because we need dotNetSDK image to build the docker image but that version is too big, thats whay we use a runtimeASP version to deploy the image after building it.  
+
+============================================  
+Docker Networks:  
+============================================  
+when we have a DB in our project, we must build a specific container for it in docker-compose  
+we want our container to communicate with DB container, that is why we define them in the same network  
+
+![image](https://github.com/Sumaya-Ali/Docker-Commands/assets/52631071/e47a9a0a-83b6-4964-ae7d-83d95fd680a2)  
+
+
+
+
+
 
 
 
