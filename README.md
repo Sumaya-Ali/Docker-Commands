@@ -39,7 +39,7 @@ docker image rm -f [docker image name or docker image id]
 
 -f ==> shortcut for force - to force removing in case there are related containers to this image but that is normally not necessarily  
 ============================================  
-### 8 to push docker image to DockerHub - after changing the directory to be inside the project folder  
+### 8 to push docker image to DockerHub - after changing the directory to be inside the project folder (ensure to execute docker tag first - find it down below)  
 
 docker push [docker id in DockerHub]/[Reposotry name in DockerHub]:[tag name]  
 ============================================  
@@ -84,6 +84,12 @@ we can remove multiple containers
 ### 13 to remove all images, containers & volumes  
 
 docker system prune -a  
+============================================  
+### 14 to rename a docker image (to push a docker image in Dockerhub ==> the docker image name must match the repository name (userid + repository name) )  
+docker tag [image id or image name] [repository name in dockerhub]:[tag name]  
+ex: docker tag hello-docker sumaya95ali/hello-docker:latest  
+and only after that we can push image in dockerhub  
+
 ============================================  
 ============================================  
 Explains Dockerfile commands:  
