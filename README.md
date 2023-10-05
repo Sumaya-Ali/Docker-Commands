@@ -122,19 +122,41 @@ ex: docker tag hello-docker sumaya95ali/hello-docker:latest
 and only after that we can push image in dockerhub  
 
 ============================================  
-### 15 to run docker-compose (build images & run containers)  
-docker-compose up   
+### 17 to log in to docker  
+docker login  
 ============================================  
-### 16 to stop docker-compose (remove the containers but keep images)  
+### 18 to show docker networks  
+docker network ls  
+============================================  
+### 19 to debug container  
+docker exec -it -u root [container id] sh  
+-it ==> interactive mode  
+[container id] ==> we can write just the first three letters of container id  
+-u ==> user id ex: root (optional)  
+============================================  
+
+============================================  
+### Docker Compose Commands:
+============================================  
+### 1 to show docker-compose version  
+docker-compose --version  
+============================================  
+### 2 to run docker-compose (build images & run containers)  
+docker-compose up --build -d   
+-- build ==> to only build images  
+-d ==> detached mode (for not blocking terminal)  
+============================================  
+### 3 to stop docker-compose (remove the containers but keep images)  
 docker-compose down  
 to remove all (including volumes)  
 docker-compose down --rmi all -v  
 ============================================  
-### 17 to log in to docker  
-docker login  
+### 4 to build docker-compose  
+docker-compose build --no-cache  
+--no-cache ==> for not using cached images  
 ============================================  
-### 18 to show docker-compose version  
-docker-compose --version  
+### 5 to show running container in docker-compose  
+docker-compose ps  
 ============================================  
 
 ============================================  
